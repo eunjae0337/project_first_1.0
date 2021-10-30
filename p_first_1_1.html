@@ -5,31 +5,28 @@
         <meta charset="utf-8">
     </head>
 
-    <script type="text/javascript">
-        function handler()
-        {
-            var first = Number.parseInt(
-                document.getElementsByName("eqv_out.v_in.t")[0].value
-            );
-            var second = Number.parseInt(
-                document.getElementsByName("eqv_out.v_in.s")[0].value
-            );
-            var resultFrame = document.getElementById("result");
-            resultFrame.value = (first / second).toString();
-        }
-        </script>
-
     <body>
         <h1>등속 운동하는 물체의 속도</h1>
         <br>
-
-        <h2>값을 입력하세요.</h2>
-            <p>운동 시간: <input type="number" name="eqv_out.v_in.t"></p>
-            <p>변위: <input type="number" name="eqv_out.v_in.s"></p>
+            <h2>값을 입력하세요.</h2>
+            <p><lable for="eqvVT">운동 시간: </lable>
+                <input type="number" id=eqvVT class=eqvVT></p>
+            <p><lable for="eqvVS">변위: </lable>
+                <input type="number" id=eqvVS class=eqvVS></p>
             <br>
+            
+            <script>
+                function hander() {
+                    let eqvVT = Number(eqvVT.value);
+                    let eqvVS = Number(eqvVS.value);
+                    alert(eqvVS/eqvVT);
+                }
+                
+            </script>
 
-            <input type="submit" value="결과 보기" onClick="handler()">
+            <input type="submit" value="결과 보기" class=eqvVResult onClick="handler()">
             <br>
+        
 
 
         <a href="index.html">첫 목록으로 돌아가기</a>
