@@ -9,22 +9,27 @@
         <h1>등속 운동하는 물체의 속도</h1>
         <br>
             <h2>값을 입력하세요.</h2>
-            <p><lable for="eqvVT">운동 시간: </lable>
-                <input type="number" id=eqvVT class=eqvVT></p>
-            <p><lable for="eqvVS">변위: </lable>
-                <input type="number" id=eqvVS class=eqvVS></p>
-            <br>
-            
-            <script>
-                function hander() {
-                    let eqvVT = Number(eqvVT.value);
-                    let eqvVS = Number(eqvVS.value);
-                    alert(eqvVS/eqvVT);
-                }
-                
-            </script>
 
-            <input type="submit" value="결과 보기" class=eqvVResult onClick="handler()">
+            <div class="eqvV">
+            <p><lable>운동 시간: </lable>
+                <input type="number" id="eqvVT" class="eqvVT"></p>
+            <p><lable for="eqvVS">변위: </lable>
+                <input type="number" id="eqvVS" class="eqvVS"></p>
+            </div>
+            <br>
+
+            <input type="submit" value="결과 보기" class="submit">
+            
+
+            <script type="text/javascript">
+                const eqvVT = document.querySelector('.eqvVT');
+                const eqvVS = document.querySelector('.eqvVS');
+                const submit = document.querySelector('.submit');
+                function eqvVresult() {
+                    alert(eqvVS/eqvVT+'m/s 입니다.');
+                }
+                submit.addEventListener('click',eqvVresult);
+            </script>
             <br>
         
 
@@ -33,4 +38,3 @@
     </body>
 
 </html>
-
