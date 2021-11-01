@@ -22,13 +22,14 @@
             
 
             <script type="text/javascript">
-                const eqvVT = document.querySelector('.eqvVT');
-                const eqvVS = document.querySelector('.eqvVS');
-                const submit = document.querySelector('.submit');
-                function eqvVresult() {
-                    alert(eqvVS/eqvVT+'m/s 입니다.');
+                const t = document.querySelector('.eqvVT');
+                const s = document.querySelector('.eqvVS');
+                const v = s/t
+                const sub = document.querySelector('.submit');
+                function result() {
+                    alert(v+'m/s 입니다.');
                 }
-                submit.addEventListener('click',eqvVresult);
+                Submit.addEventListener('click',result);
             </script>
             <br>
         
