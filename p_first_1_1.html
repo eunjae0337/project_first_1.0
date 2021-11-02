@@ -21,19 +21,20 @@
             <input type="submit" value="결과 보기" class="submit">
             
 
-            <script type="text/javascript">
-                const t = document.querySelector('.eqvVT');
-                const s = document.querySelector('.eqvVS');
-                const v = s/t
-                const sub = document.querySelector('.submit');
-                function reslut() {
-                    alert(v+'m/s 입니다. ');
+             <script type="text/javascript">
+                const eqvVelT = document.querySelector('.eqvVelT');
+                const eqvVelS = document.querySelector('.eqvVelS');
+                const eqvVelCalulation = eqvVelS/eqvVelT
+                const submitClick = document.querySelector('.submit');
+                function eqvVelResult() {
+                    alert(eqvVelCalculation+'m/s 입니다.');
                 };
-               
-                sub.addEventListener('click', result);
+                
+                submit.addEventListener('click',eqvVelresult);
             </script>
+            
+            <br>
         
-
 
         <a href="index.html">첫 목록으로 돌아가기</a>
     </body>
