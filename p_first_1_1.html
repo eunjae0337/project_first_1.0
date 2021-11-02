@@ -11,30 +11,29 @@
             <h2>값을 입력하세요.</h2>
 
             <div class="eqvV">
-            <p><lable>운동 시간: </lable>
+            <p><lable for="eqvVT">운동 시간: </lable>
                 <input type="number" id="eqvVT" class="eqvVT"></p>
             <p><lable for="eqvVS">변위: </lable>
                 <input type="number" id="eqvVS" class="eqvVS"></p>
             </div>
             <br>
 
-            <input type="submit" value="결과 보기" class="submit">
-            
-
-             <script type="text/javascript">
-                const eqvVelT = document.querySelector('.eqvVelT');
-                const eqvVelS = document.querySelector('.eqvVelS');
-                let eqvVelCalulation = eqvVelS/eqvVelT
-                const submitClick = document.querySelector('.submit');
-                function eqvVelResult() {
-                    alert(eqvVelCalulation+'m/s 입니다.');
+            <script type="text/javascript">
+                function click() {
+                    const eqvVelT = document.querySelector('.eqvVelT');
+                    const eqvVelS = document.querySelector('.eqvVelS');
+                    const eqvVelCalulation = eqvVelS/eqvVelT
+                    const submitClick = document.querySelector('.submit');
+                    function eqvVelResult() {
+                        alert(eqvVelCalculation+'m/s 입니다.');
+                    };
                 };
-                
-                submitClick.addEventListener('click',eqvVelResult);
             </script>
-            
+
+            <input type="submit" value="결과 보기" onclick="click">
             <br>
         
+
 
         <a href="index.html">첫 목록으로 돌아가기</a>
     </body>
