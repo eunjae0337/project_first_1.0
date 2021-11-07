@@ -15,6 +15,7 @@
                 <input type="number" id="eqvVT" class="eqvVelT"></p>
             <p><lable for="eqvVS">변위: </lable>
                 <input type="number" id="eqvVS" class="eqvVelS"></p>
+             <input type="submit" value="결과 보기" class="submit">
             </div>
             <br>
 
@@ -22,16 +23,12 @@
                     const eqvVelT = document.querySelector('.eqvVelT');
                     const eqvVelS = document.querySelector('.eqvVelS');
                     let calulation = eqvVelS/eqvVelT
-                function click() {
                     const submitClick = document.querySelector('.submit');
+                function click() {
                         alert(calculation+"m/s 입니다.");
                 };
+                click()
             </script>
-
-            <input type="submit" value="결과 보기" onclick="click">
-            <br>
-        
-
 
         <a href="index.html">첫 목록으로 돌아가기</a>
     </body>
