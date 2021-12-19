@@ -20,11 +20,14 @@
             <br>
 
             <script type="text/javascript">
+                 funtion click() {
                     const eqvVelT = document.querySelector('.eqvVelT');
                     const eqvVelS = document.querySelector('.eqvVelS');
                     let calculation = eqvVelS/eqvVelT
                     const submitClick = document.querySelector('.submit');
-                    calculation.textcontent = 'Answer: ';
+                    document.cookie = calculation+'m/s 입니다.';
+                  }
+                  click()
             </script>
 
         <a href="index.html">첫 목록으로 돌아가기</a>
